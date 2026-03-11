@@ -1,0 +1,86 @@
+# ============================================================
+# FLAW Gaming - WordPress Project
+# Only tracking: custom theme + custom plugin + config
+# ============================================================
+
+# --- WordPress Core (not tracked) ---
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+index.php
+
+# --- WordPress Config (sensitive) ---
+wp-config.php
+wp-config-production.php
+wp-config-sample.php
+
+# --- wp-content root ---
+wp-content/index.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup*/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/db.php
+wp-content/debug.log
+
+# --- Third-party plugins (install via WP admin) ---
+wp-content/plugins/*
+!wp-content/plugins/flaw-gaming-core/
+
+# --- Third-party themes ---
+wp-content/themes/*
+!wp-content/themes/flaw-gaming/
+
+# --- Must-use plugins ---
+wp-content/mu-plugins/
+
+# --- Languages ---
+wp-content/languages/
+
+# --- Temporary / build files ---
+*.zip
+*.tar.gz
+*.log
+*.sql
+*.sql.gz
+*.bak
+*.tmp
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Environment ---
+.env
+.env.*
+!.env.example
+
+# --- Node (if frontend build tools added later) ---
+node_modules/
+package-lock.json
+
+# --- Debug / dev scripts ---
+debug-*.php
+activate.php
+setup-menus.php
+setup-pods.php
+
+# --- Laragon / local dev ---
+.htaccess
+
+# --- Claude Code ---
+.claude/

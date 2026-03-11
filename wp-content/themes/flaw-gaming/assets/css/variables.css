@@ -1,0 +1,215 @@
+/**
+ * CSS Custom Properties (Design Tokens)
+ *
+ * @package FLAW_Gaming
+ */
+
+:root {
+    /* ═══════════════════════════════════════════════════════════════
+       COLORS - Inspired by Merciless Hub aesthetic
+       ═══════════════════════════════════════════════════════════════ */
+
+    /* Brand Colors - Gold & Crimson on pure black (matches FLAW logo) */
+    --color-primary: #D4A843;
+    --color-primary-light: #E0C068;
+    --color-primary-dark: #B08B2A;
+    --color-secondary: #C9282D;
+    --color-secondary-light: #E03338;
+    --color-secondary-dark: #A01E23;
+
+    /* Accent Colors */
+    --color-accent: #E3FC02;
+    --color-success: #00FF66;
+    --color-warning: #E3FC02;
+    --color-error: #C9282D;
+    --color-info: #D4A843;
+
+    /* Neutrals (Pure Black Dark Theme) */
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #0a0a0a;
+    --color-bg-tertiary: #111111;
+    --color-bg-elevated: #1a1a1a;
+    --color-bg-overlay: rgba(0, 0, 0, 0.9);
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #b3b3b3;
+    --color-text-tertiary: #808080;
+    --color-text-muted: #4d4d4d;
+
+    --color-border: #222222;
+    --color-border-light: #333333;
+    --color-border-focus: var(--color-primary);
+
+    /* Status Colors */
+    --color-live: #C9282D;
+    --color-upcoming: #D4A843;
+    --color-completed: #00FF66;
+    --color-cancelled: #666666;
+
+    /* Placement Colors */
+    --color-gold: #FFD700;
+    --color-silver: #C0C0C0;
+    --color-bronze: #CD7F32;
+
+    /* ═══════════════════════════════════════════════════════════════
+       TYPOGRAPHY
+       ═══════════════════════════════════════════════════════════════ */
+
+    /* Font Families */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Rajdhani', 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Font Sizes (Fluid Typography) */
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 0.9375rem);
+    --text-base: clamp(1rem, 0.925rem + 0.375vw, 1.0625rem);
+    --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+    --text-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+    --text-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+    --text-4xl: clamp(2.25rem, 1.75rem + 2.5vw, 3rem);
+    --text-5xl: clamp(3rem, 2rem + 5vw, 4.5rem);
+
+    /* Font Weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+
+    /* Line Heights */
+    --leading-none: 1;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
+
+    /* Letter Spacing */
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+
+    /* ═══════════════════════════════════════════════════════════════
+       SPACING
+       ═══════════════════════════════════════════════════════════════ */
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* Container */
+    --container-max: 1280px;
+    --container-padding: clamp(1rem, 5vw, 2rem);
+
+    /* ═══════════════════════════════════════════════════════════════
+       BORDERS & RADIUS
+       ═══════════════════════════════════════════════════════════════ */
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    --border-width: 1px;
+    --border-width-2: 2px;
+
+    /* ═══════════════════════════════════════════════════════════════
+       SHADOWS
+       ═══════════════════════════════════════════════════════════════ */
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 20px rgba(212, 168, 67, 0.3);
+    --shadow-glow-lg: 0 0 40px rgba(212, 168, 67, 0.4);
+
+    /* ═══════════════════════════════════════════════════════════════
+       TRANSITIONS
+       ═══════════════════════════════════════════════════════════════ */
+
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+    --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* ═══════════════════════════════════════════════════════════════
+       Z-INDEX
+       ═══════════════════════════════════════════════════════════════ */
+
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-header: 300;
+    --z-overlay: 400;
+    --z-modal: 500;
+    --z-toast: 600;
+
+    /* ═══════════════════════════════════════════════════════════════
+       COMPONENT TOKENS
+       ═══════════════════════════════════════════════════════════════ */
+
+    /* Cards */
+    --card-bg: var(--color-bg-secondary);
+    --card-border: var(--color-border);
+    --card-radius: var(--radius-lg);
+    --card-padding: var(--space-4);
+    --card-shadow: var(--shadow-md);
+    --card-hover-shadow: var(--shadow-lg);
+    --card-hover-transform: translateY(-4px);
+
+    /* Buttons */
+    --btn-padding-x: var(--space-6);
+    --btn-padding-y: var(--space-3);
+    --btn-radius: var(--radius-md);
+    --btn-font-weight: var(--font-semibold);
+
+    /* Header - Sticky dark header */
+    --header-height: 5rem;
+    --header-bg: rgba(0, 0, 0, 0.95);
+
+    /* Hero */
+    --hero-min-height: 90vh;
+
+    /* Glow Effects */
+    --glow-primary: 0 0 20px rgba(212, 168, 67, 0.5);
+    --glow-secondary: 0 0 20px rgba(201, 40, 45, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MEDIA QUERY ADJUSTMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+    :root {
+        --header-height: 5rem;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-fast: 0ms;
+        --transition-normal: 0ms;
+        --transition-slow: 0ms;
+        --transition-bounce: 0ms;
+    }
+}
